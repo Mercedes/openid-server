@@ -1,8 +1,8 @@
 <div class="login">
 {if $identity_url}
 <p>
-Before you can authenticate using your identity URL
-(<code>{$identity_url}</code>), you must first log in.
+Antes de que puedas identificarte usando tu URI
+(<code>{$identity_url}</code>), debes loguearte.
 </p>
 {/if}
 
@@ -14,11 +14,11 @@ Before you can authenticate using your identity URL
 <input type="hidden" name="action" value="login">
 <table>
   <tr>
-    <td>Username:</td>
+    <td>Nombre de usuario:</td>
     <td><input class="disabled_bold" type="text" name="username" value="{$required_user}"{if $required_user} disabled><input type="hidden" name="username" value="{$required_user}"{/if}></td>
   </tr>
   <tr>
-    <td>Password:</td>
+    <td>Pasaporte:</td>
     <td><input type="password" name="passwd"></td>
   </tr>
   <tr>
@@ -28,3 +28,4 @@ Before you can authenticate using your identity URL
 </form>
 </td></tr></table>
 </div>
+

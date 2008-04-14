@@ -1,8 +1,7 @@
 <fieldset>
-<legend>Sites</legend>
+<legend>Sitios</legend>
 
-This page lists past trust decisions you have made when logging into
-sites using your OpenID.
+Este es un listado de las p&aacute;ginas a las que has dado diferentes niveles de autorizaci&oacute;n para acceder a tu OpenID
 
 <p>
 <form method="post" action="{$SERVER_URL}">
@@ -11,7 +10,7 @@ sites using your OpenID.
 <table class="sites">
   <tr>
     <th></th>
-    <th>Site</th>
+    <th>Sitio</th>
     <th>Status</th>
   </tr>
   {foreach from=$sites item="site"}
@@ -24,19 +23,20 @@ sites using your OpenID.
         {$site.trust_root}
       {/if}
     </code></code></td>
-    <td>{if $site.trusted}<span class="trusted">Trusted</span>{else}
-      <nobr><span class="untrusted">Not trusted</span></nobr>{/if}</td>
+    <td>{if $site.trusted}<span class="trusted">Confiaste</span>{else}
+      <nobr><span class="untrusted">No confiaste</span></nobr>{/if}</td>
   </tr>
   {/foreach}
 </table>
 <br/>
-<input type="submit" name="trust_selected" value="Allow">
-<input type="submit" name="untrust_selected" value="Deny">
-<input type="submit" name="remove" value="Remove from list">
+<input type="submit" name="trust_selected" value="Autorizar">
+<input type="submit" name="untrust_selected" value="Rechazar">
+<input type="submit" name="remove" value="Borrar de la lista">
 {else}
-You have not yet logged into any sites with your OpenID.
+Todav&iacute;a no te has identificado en ning&uacute;n sitio con tu OpenID.
 {/if}
 </form>
 </p>
 
 </fieldset>
+

@@ -4,10 +4,10 @@
     <link rel="openid.delegate" href="{$openid_url}">
   </head>
   <body>
-    <h3>OpenID Identity Page</h3>
+    <h3>Página de una identidad OpenID</h3>
 
     <p>
-    This is the identity page for the user <strong>{$user}</strong>.
+    Esta es la página origen de la identidad {$user}. <strong>{$user}</strong>.
     </p>
   </body>
 </html>

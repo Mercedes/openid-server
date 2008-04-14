@@ -1,3 +1,4 @@
+
 {if $errors}
 <div class="errors">
   {foreach from=$errors item="error"}

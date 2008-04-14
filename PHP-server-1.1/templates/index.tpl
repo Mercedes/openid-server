@@ -9,13 +9,12 @@
   <body>
   {/if}
 
-    <div class="page">
+    <div id="container">
       {include file="header.tpl"}
-      {include file="nav.tpl"}
       {include file="errors.tpl"}
       {include file="messages.tpl"}
 
-      <div class="body">
+      <div id="contenido">
       {if $body}
         {$body}
       {else}
@@ -27,3 +26,4 @@
     </div>
   </body>
 </html>
+
