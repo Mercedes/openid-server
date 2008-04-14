@@ -3,14 +3,14 @@
 		<li><a href="{$SERVER_URL}">Inicio</a></li>
 	    {if $account}
 	      {if $ADMIN}
-	        <li><a href="{$SERVER_URL}?action=admin">Administracion</a></li>
+	        <li><a href="{$SERVER_URL}?action=admin">Administraci&oacute;n</a></li>
 	      {else}
 	        <li><a href="{$SERVER_URL}?action=account">Mi perfil</a></li>
 	        <li><a href="{$SERVER_URL}?action=sites">Sitios</a></li>
 	      {/if}
 	      <li><a href="{$SERVER_URL}?action=logout">Salir</a></li>
 	    {else}
-	      <li><a href="{$SERVER_URL}?action=login">Identifícate</a></li>
+	      <li><a href="{$SERVER_URL}?action=login">Identif&iacute;cate</a></li>
 	      {if $ALLOW_PUBLIC_REGISTRATION}
 	      <li><a href="{$SERVER_URL}?action=register">Crea una identidad</a></li>
 	      {/if}
