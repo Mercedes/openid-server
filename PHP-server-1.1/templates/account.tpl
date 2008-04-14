@@ -4,7 +4,7 @@
 
 <p class="justified">
 Este es tu perfil de usuario. Los valores que introduzcas podrán ser enviados a los sitios que aceptan OpenID, aunque no te preocupes, <strong>todos
-los campos son opcionales</strong> y además <strong>antes de mandarlos te pediremos autorización</strong>
+los campos son opcionales</strong> y adem&aacute;s <strong>antes de mandarlos te pediremos autorización</strong>
 </p>
 
 <form method="post" action="{$SERVER_URL}">
@@ -19,7 +19,7 @@ los campos son opcionales</strong> y además <strong>antes de mandarlos te pedir
     <td><input type="text" name="profile[fullname]" value="{ $profile.fullname }"></td>
   </tr>
   <tr>
-    <td align="right">Correo electrónico:</td>
+    <td align="right">Correo electr&oacute;nico:</td>
     <td><input type="text" name="profile[email]" value="{ $profile.email }"></td>
   </tr>
   <tr>
@@ -29,7 +29,7 @@ los campos son opcionales</strong> y además <strong>antes de mandarlos te pedir
     </td>
   </tr>
   <tr>
-    <td align="right">Código postal:</td>
+    <td align="right">C&oacute;digo postal:</td>
     <td><input type="text" name="profile[postcode]" value="{ $profile.postcode }"></td>
   </tr>
   <tr>
@@ -43,7 +43,7 @@ los campos son opcionales</strong> y además <strong>antes de mandarlos te pedir
     </td>
   </tr>
   <tr>
-    <td align="right">País:</td>
+    <td align="right">Pa&iacute;s:</td>
     <td>
       <select name="profile[country]">
       <option value=""{if $profile.gender == ''} SELECTED{/if}>--</option>
