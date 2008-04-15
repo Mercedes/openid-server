@@ -79,6 +79,6 @@ los campos son opcionales</strong> y adem&aacute;s <strong>antes de mandarlos te
     </td>
   </tr>
 </table>
-<input type="submit" class="boton_account" value="Guardar los cambios" name="save_profile">
+<input type="submit" id="botonaccount" value="Guardar los cambios" name="save_profile">
 </form>
 </fieldset>
