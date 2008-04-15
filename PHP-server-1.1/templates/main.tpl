@@ -3,7 +3,7 @@
 
   <p>
 Este es el servidor de identidades OpenID del BBVA. Puedes crear tu identidad y utilizar este servidor para tener un &uacute;nico
-login en todos los servicios y blogs que aceptan OpenID. OpenID es una alternativa libre y distribuida a las identidades de los grandes servicios.
+login en todos los servicios y blogs que aceptan OpenID. OpenID es una alternativa libre y distribu&iacute;da a las identidades de los grandes servicios.
 Sin embargo muchos de ellos como Yahoo! o Google te lo aceptar&aacute;n como identidad v&aacute;lida para dejar comentarios en sus blogs o incluso utilizar
 algunos de sus servicios.
   </p>

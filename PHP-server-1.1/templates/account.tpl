@@ -4,7 +4,7 @@
 
 <p class="justified">
 Este es tu perfil de usuario. Los valores que introduzcas podrán ser enviados a los sitios que aceptan OpenID, aunque no te preocupes, <strong>todos
-los campos son opcionales</strong> y adem&aacute;s <strong>antes de mandarlos te pediremos autorización</strong>
+los campos son opcionales</strong> y adem&aacute;s <strong>antes de mandarlos te pediremos autorizaci&oacute;n</strong>
 </p>
 
 <form method="post" action="{$SERVER_URL}">

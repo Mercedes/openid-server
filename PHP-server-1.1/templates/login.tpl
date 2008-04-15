@@ -18,7 +18,7 @@ Antes de que puedas identificarte usando tu URI
     <td><input class="disabled_bold" type="text" name="username" value="{$required_user}"{if $required_user} disabled><input type="hidden" name="username" value="{$required_user}"{/if}></td>
   </tr>
   <tr>
-    <td>Pasaporte:</td>
+    <td>Contrase&ntilde;a:</td>
     <td><input type="password" name="passwd"></td>
   </tr>
   <tr>
