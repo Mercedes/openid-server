@@ -234,10 +234,10 @@ function render_register($method, &$request, &$template)
                                         Server_getAccountIdentifier($request['username']));
 
                 Server_setAccount($request['username']);
-                Server_addMessage("Registration successful; welcome, ".$request['username']."!");
+                Server_addMessage("Registro correcto; Bienvenido, ".$request['username']."!");
                 Server_redirect(getServerURL());
             } else {
-                $template->addError('Sorry; that username is already taken!');
+                $template->addError('Lo sentimos; este nombre de usuario no está disponible!');
             }
         }
 

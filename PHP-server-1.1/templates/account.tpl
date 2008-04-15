@@ -3,7 +3,7 @@
 <legend>Mi perfil</legend>
 
 <p class="justified">
-Este es tu perfil de usuario. Los valores que introduzcas podrán ser enviados a los sitios que aceptan OpenID, aunque no te preocupes, <strong>todos
+Este es tu perfil de usuario. Los valores que introduzcas podr&aacute;n ser enviados a los sitios que aceptan OpenID, aunque no te preocupes, <strong>todos
 los campos son opcionales</strong> y adem&aacute;s <strong>antes de mandarlos te pediremos autorizaci&oacute;n</strong>
 </p>
 
