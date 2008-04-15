@@ -12,15 +12,15 @@ los campos son opcionales</strong> y adem&aacute;s <strong>antes de mandarlos te
 <table>
   <tr>
     <td align="right">Nick:</td>
-    <td><input type="text" name="profile[nickname]" value="{ $profile.nickname }" class="campo"></td>
+    <td><input type="text" name="profile[nickname]" value="{ $profile.nickname }"></td>
   </tr>
   <tr>
     <td align="right">Nombre completo:</td>
-    <td><input type="text" name="profile[fullname]" value="{ $profile.fullname }" class="campo"></td>
+    <td><input type="text" name="profile[fullname]" value="{ $profile.fullname }"></td>
   </tr>
   <tr>
     <td align="right">Correo electr&oacute;nico:</td>
-    <td><input type="text" name="profile[email]" value="{ $profile.email }" class="campo"></td>
+    <td><input type="text" name="profile[email]" value="{ $profile.email }"></td>
   </tr>
   <tr>
     <td align="right">Fecha de nacimiento:</td>
@@ -30,7 +30,7 @@ los campos son opcionales</strong> y adem&aacute;s <strong>antes de mandarlos te
   </tr>
   <tr>
     <td align="right">C&oacute;digo postal:</td>
-    <td><input type="text" name="profile[postcode]" value="{ $profile.postcode }" class="campo"></td>
+    <td><input type="text" name="profile[postcode]" value="{ $profile.postcode }"></td>
   </tr>
   <tr>
     <td align="right">Sexo:</td>
@@ -79,6 +79,6 @@ los campos son opcionales</strong> y adem&aacute;s <strong>antes de mandarlos te
     </td>
   </tr>
 </table>
-<input type="submit" value="Guardar los cambios" name="save_profile">
+<input type="submit" class="boton" value="Guardar los cambios" name="save_profile">
 </form>
 </fieldset>
