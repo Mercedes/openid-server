@@ -161,15 +161,15 @@ function Server_accountCheck($username, $pass1, $pass2)
     $errors = array();
 
     if ($pass1 != $pass2) {
-        $errors[] = "Passwords must match.";
+        $errors[] = "La contrase&ntilde;a no coincide.";
     } else if (strlen($pass1) < MIN_PASSWORD_LENGTH) {
-        $errors[] = 'Password must be at least '.
-            MIN_PASSWORD_LENGTH.' characters long.';
+        $errors[] = 'La contrase&ntilde;a debe tener como m&iacute;nimo '.
+            MIN_PASSWORD_LENGTH.' caracteres.';
     }
 
     if (strlen($username) < MIN_USERNAME_LENGTH) {
-        $errors[] = 'Username must be at least '.
-            MIN_USERNAME_LENGTH.' characters long.';
+        $errors[] = 'El nombre de usuario debe tener como m&iacute;nimo '.
+            MIN_USERNAME_LENGTH.' caracteres.';
     }
 
     return $errors;

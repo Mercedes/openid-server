@@ -39,6 +39,11 @@ a {
 #contenido {
 	margin: 10px 20px;
 }
+.campo {
+	background-color:white;
+	border:1px solid #6c707a;
+	color:#000000;
+}
 fieldset{
 	margin-top: 25px;
 	border-color:#6c707a;
@@ -55,8 +60,18 @@ p{
 	color: #091122;
 	font: 14px Arial, Helvetica, sans-serif;
 	text-align: justify;
-	
-	
+}
+.boton{
+	background-color:#f4e1b7;
+	border:1px solid #000000;
+	color:#6c707a;
+	margin-left: 30px;
+}
+div.errors{
+	background:#f7f5f5 none repeat scroll 0% 0%;
+	border:1px #6c707a;
+	margin-top:10px;
+	padding:5px;
 }
 div.footer {
 	border-top: 1px solid #6c707a;

@@ -11,15 +11,15 @@ Rellena el cuestionario para crear tu identidad.
 <table>
   <tr>
     <td align="right">Tu nombre de usuario:</td>
-    <td><input type="text" name="username" value="{$username}"></td>
+    <td><input type="text" name="username" value="{$username}" class="campo"></td>
   </tr>
   <tr>
     <td align="right">Contrase&ntilde;a:</td>
-    <td><input type="password" name="pass1" value=""></td>
+    <td><input type="password" name="pass1" value="" class="campo"></td>
   </tr>
   <tr>
     <td align="right">Confirma tu contrase&ntilde;a:</td>
-    <td><input type="password" name="pass2" value=""></td>
+    <td><input type="password" name="pass2" value="" class="campo"></td>
   </tr>
   <tr>
     <td></td><td><img class="captcha" src="{$SERVER_URL}?action=captcha"><br/>
@@ -28,10 +28,10 @@ Rellena el cuestionario para crear tu identidad.
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><input type="text" name="captcha_text" value="">
+    <td><input type="text" name="captcha_text" value="" class="campo">
     </td>
   </tr>
 </table>
-<input type="submit" value="Crea la cuenta" name="save_profile">
+<input type="submit" class="boton" value="Crea la cuenta" name="save_profile">
 </form>
 </fieldset>

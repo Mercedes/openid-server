@@ -1,7 +1,7 @@
 <div class="login">
 {if $identity_url}
 <p>
-Antes de que puedas identificarte usando tu URI
+Antes de que puedas identificarte usando tu URL
 (<code>{$identity_url}</code>), debes loguearte.
 </p>
 {/if}
@@ -15,14 +15,14 @@ Antes de que puedas identificarte usando tu URI
 <table>
   <tr>
     <td>Nombre de usuario:</td>
-    <td><input class="disabled_bold" type="text" name="username" value="{$required_user}"{if $required_user} disabled><input type="hidden" name="username" value="{$required_user}"{/if}></td>
+    <td><input class="campo" type="text" name="username" value="{$required_user}"{if $required_user} disabled><input type="hidden" name="username" value="{$required_user}"{/if}></td>
   </tr>
   <tr>
     <td>Contrase&ntilde;a:</td>
-    <td><input type="password" name="passwd"></td>
+    <td><input type="password" name="passwd" class="campo"></td>
   </tr>
   <tr>
-    <td align="center" colspan="2"><input type="submit" value="Log in"></td>
+    <td align="center" colspan="2"><input  class="boton" type="submit" value="Login"></td>
   <tr>
 </table>
 </form>

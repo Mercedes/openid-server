@@ -41,7 +41,7 @@ function render_login($method, &$request, &$template)
 
                 Server_redirect($url);
             } else {
-                $template->addError("Invalid account information.");
+                $template->addError("Datos incorrectos.");
             }
         }
     }
@@ -64,10 +64,9 @@ function render_login($method, &$request, &$template)
             // know about that URL.
             Server_clearAccount();
             setRequestInfo();
-            $template->addError("You've tried to authenticate using a URL this ".
-                                "server does not manage (<code>".$info->identity."</code>).".
-                                " If you are using your own identity page, there may be a typo ".
-                                "in the URL.");
+            $template->addError(" Ha intentado identificarse con una direcci&oacute;n que este servidor no gestiona: ".
+                                "<code>".$info->identity."</code>.".
+                                " Si est&aacute;s usando tu propia p&aacute;gina como identidad seguramente ha sido por un error de mecanograf&iacute;a.");
         }
     }
 
@@ -107,7 +106,7 @@ function render_sites($method, &$request, &$template)
                 }
             }
 
-            $template->addMessage('Settings saved.');
+            $template->addMessage('Datos guardados.');
         }
     }
 
@@ -121,7 +120,7 @@ function render_sites($method, &$request, &$template)
             $sites[$i]['trust_root'] = substr($sites[$i]['trust_root'], 0, $max_trustroot_length) . "...";
         }
 
-        $sites[$i]['trust_root'] = preg_replace("/\*/", "<span class='anything'>anything</span>",
+        $sites[$i]['trust_root'] = preg_replace("/\*/", "<span class='anything'>cualquiera</span>",
                                                 $sites[$i]['trust_root']);
     }
 
@@ -174,7 +173,7 @@ function render_account($method, &$request, &$template)
 
         // Add a message to the session so it'll get displayed after
         // the redirect.
-        Server_addMessage("Changes saved.");
+        Server_addMessage("Cambios guardados.");
 
         // Redirect to account screen to make reloading easy.
         Server_redirect(getServerURL(), 'account');
@@ -212,7 +211,7 @@ function render_register($method, &$request, &$template)
         $success = true;
 
         if ($hash !== md5($request['captcha_text'])) {
-            $template->addError('Security code does not match image.  Please try again.');
+            $template->addError('El c&oacute;digo de seguridad no coincide. It&eacute;ntelo de nuevo.');
             $success = false;
         }
 
@@ -341,15 +340,15 @@ function render_trust($method, &$request, &$template)
 
         list($optional, $required, $policy_url) = $sreg;
 
-        $sreg_labels = array('nickname' => 'Nickname',
-                             'fullname' => 'Full name',
-                             'email' => 'E-mail address',
-                             'dob' => 'Birth date',
-                             'postcode' => 'Postal code',
-                             'gender' => 'Gender',
-                             'country' => 'Country',
-                             'timezone' => 'Time zone',
-                             'language' => 'Language');
+        $sreg_labels = array('nickname' => 'Nombre de usuario',
+                             'fullname' => 'Nombre',
+                             'email' => 'E-mail',
+                             'dob' => 'Fecha de cumplea&ntilde;os',
+                             'postcode' => 'C&oacute;digo Postal',
+                             'gender' => 'G&eacute;nero',
+                             'country' => 'Pa&iacute;s',
+                             'timezone' => 'Zona horaria',
+                             'language' => 'Idioma');
 
         $profile['country'] = getCountryName($profile['country']);
         $profile['language'] = getLanguage($profile['language']);
