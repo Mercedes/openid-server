@@ -234,7 +234,7 @@ function render_register($method, &$request, &$template)
 
                 Server_setAccount($request['username']);
                 Server_addMessage("Registro correcto, bienvenido, ".$request['username']."!");
-                Server_redirect(getServerURL());
+                Server_redirect(getServerURL()."?action=account");
             } else {
                 $template->addError('Lo sentimos, este nombre de usuario no est&aacute; disponible!');
             }
