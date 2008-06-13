@@ -173,8 +173,8 @@ function render_account($method, &$request, &$template)
 
         // Add a message to the session so it'll get displayed after
         // the redirect.
-        Server_addMessage("Cambios guardados.");
-
+        Server_addMessage("Cambios guardados");
+       
         // Redirect to account screen to make reloading easy.
         Server_redirect(getServerURL(), 'account');
     }

@@ -84,5 +84,11 @@ div.footer {
 	font-size: 12px;
 	color: #091122;
 }
+.message {
+	margin-left: 300px; 
+	color: red; 
+	font-weight: bold; 
+}
+	
 
 

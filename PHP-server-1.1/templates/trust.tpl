@@ -1,6 +1,6 @@
 <div class="form">
 <p>
-Deseas confirmar tu URI deidentidad (<code>{$identity}</code>) a <code>{$trust_root}</code>?
+Deseas confirmar tu URI de identidad (<code>{$identity}</code>) a <code>{$trust_root}</code>?
 </p>
 
 <form method="post" action="{$SERVER_URL}">
@@ -10,10 +10,10 @@ Deseas confirmar tu URI deidentidad (<code>{$identity}</code>) a <code>{$trust_r
 
 El servidor ha solicitado m&aacute;s informaci&oacute;n de tu perfil.
 Los campos obligatorios y los opcionales se listan abajo.
-Marca la casilla "¿Enviar?" con los campos que desees enviar.
+Marca la casilla "&iquest;Enviar?" con los campos que desees enviar.
   <table border="1" width="100%">
     <tr>
-      <th>¿Enviar?</th>
+      <th>&iquest;Enviar?</th>
       <th>Nombre</th>
       <th>Valor</th>
       <th>Status</th>
@@ -35,7 +35,7 @@ Marca la casilla "¿Enviar?" con los campos que desees enviar.
     La pol&iacute;tica de protecci&oacute;n de datos de este servidor puede encontrarse en:<br/>
     <code><a href="{$policy_url}">{$policy_url}</a></code>
   {else}
-    El servidor no ha proporcionado su pol&iacute;tica de protecci&oacute;n de datos.
+    
   {/if}
   </div>
 {/if}
