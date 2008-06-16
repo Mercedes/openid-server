@@ -106,10 +106,9 @@ function render_sites($method, &$request, &$template)
                 }
             }
 
-            $template->addMessage('Los cambios han sido guardados. Ya puedes acceder a tu p&aacute;gina:Planta29, Actibva');
+            $template->addMessage('Los cambios han sido guardados. Ya puedes acceder a tu p&aacute;gina:<a href="http://www.planta29.com">planta29</a>,<a href="http://www.actibva.com>actibva</a>');
         }
     }
-PPp
     $sites = $storage->getSites($account);
 
     $max_trustroot_length = 50;
