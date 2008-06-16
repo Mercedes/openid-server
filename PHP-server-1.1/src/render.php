@@ -172,7 +172,7 @@ function render_account($method, &$request, &$template)
 
         // Add a message to the session so it'll get displayed after
         // the redirect.
-        Server_addMessage("Los cambios han sido guardados. Ya puedes acceder a tu p&aacute;gina: <a href='http://www.planta29.com'>planta29</a>, <a href='http://www.actibva.com'>actibva</a>");
+        Server_addMessage("Los cambios han sido guardados. Ya puedes acceder a tu p&aacute;gina: <a href='http://www.planta29.com'>planta29</a> y <a href='http://www.actibva.com'>actibva</a>");
        
         // Redirect to account screen to make reloading easy.
         Server_redirect(getServerURL(), 'account');
