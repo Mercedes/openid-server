@@ -106,7 +106,7 @@ function render_sites($method, &$request, &$template)
                 }
             }
 
-            $template->addMessage('Los cambios han sido guardados. Ya puedes acceder a tu página:<a href="http://www.planta29.com">Planta29</a>,<a href="http://www.actibva.com>Actibva</a>');
+            $template->addMessage('Los cambios han sido guardados. Ya puedes acceder a tu p&aacute;gina:<a href="http://www.planta29.com">Planta29</a>,<a href="http://www.actibva.com">Actibva</a>');
         }
     }
 PPp
