@@ -1,8 +1,9 @@
-
-<div class="footer">
+<div id="siteinfo">
 {$SITE_TITLE}
- | <a href="http://openid.blogs.es/seccion/quees">&iquest;Qu&eacute; es OpenID?</a> 
-{if $SITE_ADMIN_EMAIL}
- | Contacto <a href="mailto:{$SITE_ADMIN_EMAIL}">{$SITE_ADMIN_EMAIL}</a>
-{/if}
+<ul>
+	<li><a href="http://openid.blogs.es/seccion/quees">&iquest;Qu&eacute; es OpenID?</a></li>
+	{if $SITE_ADMIN_EMAIL}
+	<li>Contacto <a href="mailto:info@lasindias.com">info@lasindias.com</a></li>
+	{/if}
+</ul>
 </div>

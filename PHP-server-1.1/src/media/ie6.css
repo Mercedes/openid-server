@@ -1,0 +1,20 @@
+/* Estilos para IE6 */
+
+
+/* simulando min-height */
+
+#content-main {
+	height: 300px;
+}
+
+/* Fix al doble margen */
+
+#content-main, ul#content-sub {
+	display: inline;
+}
+
+/* Border-panic */
+
+.boton, #autorizar, #rechazar {
+	border-style: solid;
+}

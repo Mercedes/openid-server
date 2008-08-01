@@ -1,31 +1,15 @@
-<div class="login">
-{if $identity_url}
-<p>
-Antes de que puedas identificarte usando tu URL
-(<code>{$identity_url}</code>), debes loguearte.
-</p>
-{/if}
+<h2>Ingresa tus datos</h2>
 
-<table class="login"><tr><td>
-<form name="loginform" method="post" action="{$SERVER_URL}">
-{if $next_action}
-<input type="hidden" name="next_action" value="{$next_action}">
-{/if}
-<input type="hidden" name="action" value="login">
-<table>
-  <tr>
-    <td>Nombre de usuario:</td>
-    <td><input class="campo" type="text" name="username" value="{$required_user}"{if $required_user} disabled><input type="hidden" name="username" value="{$required_user}"{/if}></td>
-  </tr>
-  <tr>
-    <td>Contrase&ntilde;a:</td>
-    <td><input type="password" name="passwd" class="campo"></td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2"><input  class="boton" type="submit" value="Login"></td>
-  <tr>
-</table>
+<form id="loginform" name="loginform" method="post" action="{$SERVER_URL}">
+    <input type="hidden" name="action" value="{$next_action}" />
+
+    <p><label for="username">Nombre de usuario:</label>
+    <input class="campo" type="text" name="username" id="username" value="{$required_user}"{if $required_user} disabled><input type="hidden" name="username" value="{$required_user}"{/if}></p>
+
+    <p><label for="passwd">Contrase&ntilde;a:</label>
+    <input type="password" name="passwd" id="passwd" class="campo" /></p>
+
+    <input  class="boton" type="submit" value="Ingresar" />
+
 </form>
-</td></tr></table>
-</div>
 
