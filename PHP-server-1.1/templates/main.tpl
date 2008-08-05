@@ -10,14 +10,14 @@ algunos de sus servicios.
 {if $account && !$ADMIN}
   <h2>Instrucciones de uso</h2>
 
-  <p id="tu-id">Tu OpenID b&aacute;sica es: <strong>http://www.identidad.planta29.com/?user=ejemplo</strong></p>
+  <p id="tu-id">Tu OpenID b&aacute;sica es: <strong>{$account_openid_url}</strong></p>
 
   <p>
 Pero si quieres algo <strong>m&aacute;s f&aacute;cil de recordar</strong>, puedes hacer f&aacute;cilmente que tu OpenID sea <strong>la direcci&oacute;n de tu p&aacute;gina personal o 
 blog</strong>. Basta con editar la plantilla o el index y dentro del header (lo que hay entre las etiquetas <code>&lt;head&gt;</code>) a&ntilde;adir:</p>
 <pre>
-<code>&lt;link rel="openid.server" href="http://www.exploradoreselectronicos.net/openid/index.php/serve" /&gt;
-&lt;link rel="openid.delegate" href="http://www.exploradoreselectronicos.net/openid/?user=fmdz" /&gt;</code>
+<code>&lt;link rel="openid.server" href="{$SERVER_URL}index.php/serve" /&gt;
+&lt;link rel="openid.delegate" href="{$account_openid_url}" /&gt;</code>
 </pre>
 <p>Después de eso podr&aacute;s utilizar la uri de tu blog o tu p&aacute;gina como tu identidad OpenID.</p>
 {/if}
